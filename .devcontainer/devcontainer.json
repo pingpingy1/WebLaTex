@@ -5,6 +5,19 @@
 	"image": "sanjibsen/weblatex:latest", // https://github.com/sanjib-sen/weblatex-docker
 	"remoteUser": "root", // Do not change this
 	"features": {},
+
+	// Ask for write permissions of my repos.
+	// Copied from: https://github.com/konscodes/playground/blob/main/.devcontainer/devcontainer.json
+	// Discussion: https://github.com/orgs/community/discussions/36228
+	"customizations": {
+		"codespaces": {
+			"repositories": {
+			  "pingpingy1/*": {
+				"permissions": "write-all"
+			  }
+			}
+		}
+	},
 	"customizations": {
 		"vscode": {
 			"settings": {
